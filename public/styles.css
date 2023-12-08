@@ -1,0 +1,207 @@
+/* Structure */
+
+body {
+    background-color: white;
+    color: white;
+}
+
+header #main-title {
+    text-align: center;
+    font-size: 42px;
+    color: black;
+}
+
+h2, h3, p{
+    color: white;
+}
+
+.stat {
+    width: calc(32% - 30px); 
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background: maroon;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#stat-details-column,
+#add-stat-container {
+    width: 90%; 
+}
+
+.stat,
+#stat-details-column,
+#add-stat-container {
+    padding: 15px;
+    margin: 15px;
+    background: maroon;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-link {
+    font-size: 2em;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#edit-link {
+    float: right;
+    margin-right: 10px;
+}
+
+#delete-link {
+    float: right;
+}
+
+#add-link:hover {
+    background: maroon;
+}
+
+#link,
+#delete-link {
+    float: none;
+    margin: 10px 0; 
+    font-size: 1.5em;
+    color: white;
+}
+
+#link:hover,
+#delete-link:hover {
+    color: #333;
+}
+
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.dialog {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.close {
+    color: #888;
+    float: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.transparent {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+/* Navigation */
+#button-home,
+#button-roster,
+#button-schedule,
+#button-my-tickets,
+#button-game-ratings,
+#button-stats {
+    border: 2px solid maroon; 
+    font-size: 12px;
+    background: none;
+    margin: 0;
+    padding: 1.5%; 
+    width: 16.66%; 
+    text-align: center; 
+}
+
+#button-container {
+    border: 2px solid maroon;
+    padding: 0;
+    width: 90%;
+}
+
+#main-nav ul {
+    text-align: center;
+    width: 100%;
+}
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: maroon;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#button-stats{
+    background-color: maroon;
+    color: white;
+}
+
+/* Typography */
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Media Querey */
+
+@media (max-width: 1000px) {
+    .stat{
+        width: 100%; 
+        margin: 15px 0; 
+}
+}
+
+/* Media Query */
+@media only screen and (min-width: 1000px) {
+    
+    .content-section {
+        display: flex; 
+        padding: 10px;
+    }
+    
+    .rectangle {
+        width: 45%; 
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .hide-small {
+        display: block;
+    }
+
+    #button-home,
+    #button-roster,
+    #button-schedule,
+    #button-my-tickets,
+    #button-game-ratings,
+    #button-stats{
+        font-size: 20px;
+    }
+}

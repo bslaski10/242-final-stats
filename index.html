@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Part 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Player Stats</h1>
+    </header>
+
+    <nav id="main-nav">
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-items" class="hide-small">
+            <div id="button-container">
+                <table>
+                    <a href="index.html"><button id="button-home">Home</button></a>
+                    <a href="roster.html"><button id="button-roster">Roster</button></a>
+                    <a href="schedule.html"><button id="button-schedule">Schedule</button></a>
+                    <a href="tickets.html"><button id="button-my-tickets">Tickets</button></a>
+                    <a href="ratings.html"><button id="button-game-ratings">Ratings</button></a>
+                    <a href="stats.html"><button id="button-stats">Stats</button></a>
+                </table>
+            </div>
+        </ul>
+    </nav>
+
+    <a href="#" id="add-link">+</a>
+
+    <div class="columns two-columns">
+        <div id="stat-list" class="columns"></div>
+        
+        <div id="stat-details-column">
+
+            <h2>Details</h2>
+
+            <div id="stat-details"></div>
+        </div>
+    </div>
+    <div id="add-stat-container" class="dialog transparent">
+        <span class="close">&times;</span>
+
+        <h3 id="add-title">Stats</h3>
+        <form id="add-stat-form" method="post">
+            <input type="hidden" name="_id" value="-1" />
+            <p>
+                <label for="first">First Name:</label>
+                <input type="text" id="first" name="first" required />
+            </p>
+            <p>
+                <label for="last">Last Name:</label>
+                <input type="text" id="last" name="last" required />
+            </p>
+            <p>
+                <label for="touchdowns">Touchdonws:</label>
+                <input type="number" id="touchdowns" name="touchdowns" required />
+            </p>
+            <p>
+                <label for="passing">Passing Yards:</label>
+                <input type="number" id="passing" name="passing" required />
+            </p>
+            <p>
+                <label for="recieving">Recieving Yards:</label>
+                <input type="number" id="recieving" name="recieving" required />
+            </p>
+            <p>
+                <label for="rushing">Rushing Yards:</label>
+                <input type="number" id="rushing" name="rushing" required />
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
