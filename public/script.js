@@ -52,7 +52,7 @@ const displayDetails = (stat) => {
     const h3 = document.createElement("h3");
     h3.innerHTML = `${stat.first} ${stat.last}`;
     statDetails.append(h3);
-    
+
     const p = document.createElement("p");
     statDetails.append(p);
     p.innerHTML = `Total Touchdowns: ${stat.touchdowns}<br>Passing Yards: ${stat.passing}<br>Rushing Yards: ${stat.rushing}<br>Recieving Yards: ${stat.recieving}`;
@@ -137,7 +137,7 @@ console.log("working4");
 
     if (response.status != 200) {
         console.log("Error posting data");
-        alert("Please make sure all boxes are filled and have no negative stats")
+        alert("Please make sure all boxes are filled and have no negative touchdowns")
     }
 
     stat = await response.json();
