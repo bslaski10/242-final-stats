@@ -55,7 +55,7 @@ const displayDetails = (stat) => {
 
     const p = document.createElement("p");
     statDetails.append(p);
-    p.innerHTML = `Total Touchdowns: ${stat.touchdowns} Passing Yards: ${stat.passing} Rushing Yards: ${stat.rushing} Recieving Yards: ${stat.recieving}`;
+    p.innerHTML = `Total Touchdowns: ${stat.touchdowns}<br>Passing Yards: ${stat.passing}<br>Rushing Yards: ${stat.rushing}<br>Recieving Yards: ${stat.recieving}`;
 
 
     editLink.onclick = (e) => {
