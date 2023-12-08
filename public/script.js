@@ -39,10 +39,6 @@ const displayDetails = (stat) => {
     const statDetails = document.getElementById("stat-details");
     statDetails.innerHTML = "";
 
-    const h3 = document.createElement("h3");
-    h3.innerHTML = `${stat.first} ${stat.last}`;
-    statDetails.append(h3);
-
     const deleteLink = document.createElement("a");
     deleteLink.innerHTML = "	&#x2715;";
     statDetails.append(deleteLink);
@@ -53,6 +49,10 @@ const displayDetails = (stat) => {
     statDetails.append(editLink);
     editLink.id = "edit-link";
 
+    const h3 = document.createElement("h3");
+    h3.innerHTML = `${stat.first} ${stat.last}`;
+    statDetails.append(h3);
+    
     const p = document.createElement("p");
     statDetails.append(p);
     p.innerHTML = `Total Touchdowns: ${stat.touchdowns}<br>Passing Yards: ${stat.passing}<br>Rushing Yards: ${stat.rushing}<br>Recieving Yards: ${stat.recieving}`;
