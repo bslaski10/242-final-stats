@@ -112,7 +112,7 @@ const validateStat = (stat) => {
         passing: Joi.string().min(0).required(),
         touchdowns: Joi.number().min(0).required(),
         recieving: Joi.string().min(0).required(),
-        rushing: Joi.number().min(0).required(),
+        rushing: Joi.string().min(0).required(),
     });
 
     return schema.validate(stat);
